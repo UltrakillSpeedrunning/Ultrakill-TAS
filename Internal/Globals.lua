@@ -191,7 +191,7 @@ function movie.no_refresh(enable) end
 ---Starts capturing the movie<br>
 ---You don't need to call `movie.stop_capture()` at the end of the script, 
 ---it will automatically stop the capture when the script ends
----@param args movieCaptureTable A table of arguments to pass to the capture<ul><li>`fps` - Default: `60`. The FPS to capture the movie at.</li><li>`width` - Default: `1920`. The width of the rendered movie. Must be even</li><li>`height` - Default: `1080`. The height of the rendered movie. Must be even</li><li>`path` - Default: `"output.mp4"`. The path to save the movie to. Accepts relative path from the game directory, or an absolute path</li></ul>
+---@param args? movieCaptureTable A table of arguments to pass to the capture<ul><li>`fps` - Default: `60`. The FPS to capture the movie at.</li><li>`width` - Default: `1920`. The width of the rendered movie. Must be even</li><li>`height` - Default: `1080`. The height of the rendered movie. Must be even</li><li>`path` - Default: `"output.mp4"`. The path to save the movie to. Accepts relative path from the game directory, or an absolute path</li></ul>
 function movie.start_capture(args) end
 
 ---Stops capturing the movie
